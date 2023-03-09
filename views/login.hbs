@@ -1,0 +1,60 @@
+<div class='container_form col-10 col-md-8 col-lg-4 mx-auto'>
+  <form class='form-signin mx-auto' action='' method='post'>
+    <div class='d-flex justify-content-center'>
+      <img
+        class='mb-4 mx-auto'
+        src='images/logo/ND_Logo.png'
+        alt='logo image'
+        width='300'
+        height='auto'
+      />
+    </div>
+    <h1 class='h3 mb-3 fw-normal'>Connectez-vous</h1>
+
+    <div class='form-floating mb-3'>
+      <input
+        type='email'
+        class='form-control'
+        id='username'
+        placeholder='name@example.com'
+        name='_username'
+        value='{{last_username}}'
+      />
+      <label for='username'>Email</label>
+    </div>
+    <div class='form-floating mb-2'>
+      <input
+        type='password'
+        class='form-control'
+        id='Password'
+        placeholder='Password'
+        name='_password'
+      />
+      <label for='Password'>Mot de passe</label>
+    </div>
+    <input type='hidden' name='_csrf_token' value='' />
+    <div class='checkbox mb-3'>
+      <label>
+        <input type='checkbox' value='remember-me' />
+        Se souvenir de moi
+      </label>
+    </div>
+    <input type='hidden' name='_csrf_token' value='' />
+    <!-- If you want to control the URL the user is redirected to on success -->
+    <input type='hidden' name='_target_path' value='/login' />
+    <button class='w-100 btn btn-lg btn-primary' type='submit'>
+      Se connecter
+    </button>
+    <div class='link'>
+      <p>Pas encore de compte ?
+        <a class='btn btn-link' href='/register'>
+          Inscrivez-vous !</a>
+      </p>
+      <p>
+        <a class='btn btn-link' href='/reset-password'>Mot de passe oublié ?</a>
+      </p>
+    </div>
+
+    <p class='mt-5 mb-3 text-muted'>© Nouvelles Donnes - 2023</p>
+  </form>
+</div>
